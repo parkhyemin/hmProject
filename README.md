@@ -1,3 +1,14 @@
+
+```
+사이트 https://wizardly-meitner-e68d72.netlify.app
+
+Commit 순서
+git add .
+git commit -m "코멘트"
+git push -u origin master
+```
+
+
 ```
 ┌───────────────────────────────────────────────┐
                                        _       
