@@ -52,7 +52,11 @@
 		
 		function toggle_layer() 
 		{
-			$("#id1").toggle();
+			var tmp = $("#id1").style.display;
+			if(tmp == '' || tmp == 'block')
+				$("#id1").style = 'none';
+			else
+				$("#id1").style = 'block'
 		}
 		
 	</script>
