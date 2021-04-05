@@ -45,15 +45,11 @@
 	</body>
 	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script>
-		setInterval(toggle_layer('id1'), 1000);
+		setInterval(toggle_layer, 1000);
 		
-		function toggle_layer(id) 
+		function toggle_layer() 
 		{
-			if($("#" + id).css("display") == "none"){
-				$("#" + id).show();
-			}else{
-				$("#" + id).hide();
-			}
+			$("#id1").toggle();
 		}
 		
 	</script>
