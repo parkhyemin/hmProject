@@ -45,15 +45,16 @@
 	</body>
 	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script>
-		setInterval(test('id1'), 1000);
-		function test(id) 
+		setInterval(toggle_layer('id1'), 1000);
+		
+		function toggle_layer(id) 
 		{
-			$('#'+id).toggle();
-			// var a = document.getElementById('id1').style.display;
-			// if(a == 'block') a = 'none'
-			// else a = 'block'
-			
-			// document.getElementById('id1').style.display = a;
+			if($("#" + id).css("display") == "none"){
+				$("#" + id).show();
+			}else{
+				$("#" + id.hide();
+			}
 		}
+		
 	</script>
 </html>
