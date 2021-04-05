@@ -40,15 +40,15 @@
 		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20200323_209%2F1584898413001UylWh_JPEG%2F22258247546824706_766269936.jpg&type=a340"/>
 	</body>
 	<script>
-		setTimeout(test, 3000);
+		setInterval(test, 3000);
 		function test() 
 		{
 			var a = document.getElementById('id1').style.display;
-			//if(a == 'block') a = 'none'
-			//else a = 'block'
+			if(a == 'block') a = 'none'
+			else a = 'block'
 			
 			alert(a);
-		  	//document.getElementById('id1').style.display = a;
+		  	document.getElementById('id1').style.display = a;
 		}
 	</script>
 </html>
