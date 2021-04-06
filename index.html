@@ -12,9 +12,8 @@
 		button{float: right; margin-right : 10px; width :100px}
 	</style>
 	<body>
-		<button onclick='showAllImage()'>
-			눌러바
-		</button>
+		<button onclick='showAllImage()'> 모두보여줘 </button>
+		<button onclick='hideAllImage()'> 모두숨겨줘 </button>
 		<p>안녕 소윤 승윤아</p>	
 		<p>엄마 아빠 멋지고 사랑해  </p>
 		<p>엄마 아빠 사랑해  </p>
@@ -86,6 +85,11 @@
 		function showAllImage() 
 		{
 			$("img").show();
+		}
+		
+		function hideAllImage() 
+		{
+			$("img").hide();
 		}
 		
 	</script>
