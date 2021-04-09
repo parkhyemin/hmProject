@@ -4,101 +4,124 @@
 		<title>Road Trip by TEMPLATED</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 	</head>
-	<style>
-		p { margin:30px; } 
-		img {margin-bottom : 10px;}
-		button{float: right; margin-right : 10px; width :100px}
-	</style>
+
 	<body>
-		<button onclick='showAllImage()'> 모두보여줘 </button>
-		<button onclick='hideAllImage()'> 모두숨겨줘 </button>
-		<p>안녕 소윤 승윤아</p>	
-		<p>엄마 아빠 멋지고 사랑해  </p>
-		<p>엄마 아빠 사랑해  </p>
-		<img id='id1' src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTExMDFfMTUy%2FMDAxNTcyNTczNDIyODQw.4draBbHFb9T3Uf5aVHyLEPnZJ46H-nufB33zAHxtCNcg.HQLUV59Irk480mO4DOpDxts1mFeC6t5h3Rth4_ySE0Ag.JPEG.and-drawing%2FIMG_0617.JPG&type=sc960_832"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMjBfMTAz%2FMDAxNjE2MjE3NzcyMzc2.Rbw920Fw0fM9nfTmmo6EjJToqqkP099OJeeE86oLU0Yg.gf67hLcBeVjXFUpPMaDCIDBsHXqwSdSxQkTlnhmqwyAg.JPEG.dhrql888%2F20210319%25A3%25DF124426.jpg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA3MDhfMjc5%2FMDAxNTk0MjEwOTUwMTEz.QtAEM49FM0CzOXOd38mmfjv4OBBEAw2kZovQxb5Oi0wg.2pDylDy1MscxRWtanVlk4ugEoYC6VOC17E2-Y9Y2vsIg.JPEG.cutecolt%2Fbeauty_1594185449564.jpeg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160615_66%2Fmessier2000_1465919221140uqKAv_JPEG%2Fbbc83621-6752-4cb3-ba1a-045da02334e0.png.jpg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMTVfNDUg%2FMDAxNjE1ODExOTM0Mzk5.27O_q786U_EIOkJY8yQyFeepC4qx58MHXBsI8Dfklawg.jzhSQgXHVdZQe8U-b6cMke-LwaMEcX8e1dqVJQNxyxog.JPEG.tngo1005%2F%25BD%25C5%25B5%25A5%25B7%25BC%25B6%25F31.jpg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA1MDhfNjAg%2FMDAxNTg4OTM5OTc0NzMz.GaBNyqCRGEbHyG-VLgFo8Metm92knnbcw7Xbg3yYBssg.zQnc9R5yePlo1ufRuqahrXaeaSnyOCoFQqsdhbAQKtkg.JPEG.slmpje%2F1588939973341.jpg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMzFfMjky%2FMDAxNjEyMDk2MzIwNDE1.X852kLaUY9I7HTrvQKOIAmfjbwWee-0sQGJFP35DgFQg.9gEDQAo4_zBA2tbIXHgOd0EKOCi2s1SlMK1MvTvDevQg.JPEG.jje2590%2F7D39E4CE-DFCB-4F6E-B013-F0C6AF81ECF6.jpg&type=a340"/>
-		<p>이제 도깨비 나온다  </p>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzA2MDlfMjc5%2FMDAxNDk2OTc2NDg4OTEw.IiG8MJRHW8h7m0m9rm6Cexwe8g15Mlz9gpSM4C1eZuMg.OB1A3fR6EJSMK6fah9tRx0MLBPYWO2mFyEyKZfPWPH4g.JPEG.jymontessori%2Fzxczxczxc.jpg&type=sc960_832"/>
-		<p>이제 자동차다</p>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMjlfMjQg%2FMDAxNjExOTA2ODk2NjY0.aB0egUYuEKeXWcU2sOKSPAwvt6JD0g2HSR_jpi4cTikg.t2NDrKGHYuUeMCRFAePaZhfQbEoKMicsMw8PHIWicRUg.JPEG.ruddnr1978%2F012.jpg&type=l340_165"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210328_194%2F16169047651293xwPK_JPEG%2F39674_mainiamge4.jpg&type=a340"/>
+		<div class="container">
+			<button onclick='showAllImage()'> 모두보여줘 </button>
+			<button onclick='hideAllImage()'> 모두숨겨줘 </button>
+		</div>
 		
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMjVfMTI2%2FMDAxNjE2NjgwMzUyNDM0.JlKwIRnxF2ms6iv1DdQL2Y4O02K4KSzYdgbmKpVKGqIg.ub3GYm6H7WCL6APXDqBQy4hCoMrM8QYfm-KwkH4ZNZ8g.JPEG.dots9288%2Foutput_1049029607.jpg&type=a340"/>
-		
-		<p>오늘은 2021년 4월 3일입니다</p>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20140703_245%2Fsiena94_1404363462826iOX7R_PNG%2Fpika.png&type=a340"/>
-		
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTA2MjdfMTY0%2FMDAxNTYxNjQzOTIxODUy.ZthEmYZ8Ad8wM31JU4RjL5srlzF7IB2BOIwyGs828Ocg.Vm6Adt3ku6UqNgByTQEwoMAE8Ox0zDWmo9uCP_mqOZIg.PNG.opgh1%2F%25B8%25ED%25C5%25BD%25C1%25A4%25C7%25C7%25C4%25AB%25C3%25F2.png&type=a340"/>
-		
-		<p>이건 승윤이꺼야</p>
-		<img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F7c%2Fac%2F9f%2F7cac9ffb98ca75f8f9697ce1b54a6300.jpg&type=a340"/>
-		
-		<p>이건 소윤이꺼야</p>
-		
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMDlfMTg1%2FMDAxNjEwMTc1NjU5MDgx.89_bj-cN2P7uSQDepmMIviZAL0I4SmzZZmej0gxN8PAg.mOrlC0eLc3KC8dR4UhuGRruaioLgtzdEzS7B2i8glVAg.JPEG.ev91%2F%25C1%25F6%25BF%25EC%25C7%25C7%25C4%25AB%25C3%25F2.jpeg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMThfMTI2%2FMDAxNjE2MDQzNzYzMTM2.iAMUiMdY6BzRehwiKpEcFNXwdS101Hev2VPM2lH58Z8g.aBYbDY8ayjkfvfZLXayuXAySowe53Y0RAbh1MPM4trkg.JPEG.lhl6291%2FIMG_7321.JPG&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20200323_209%2F1584898413001UylWh_JPEG%2F22258247546824706_766269936.jpg&type=a340"/>
-		
-		<p>
-			이제 4월5일 식목일 소윤이꺼 시크릿 쥬쥬나와라
-		</p>
-		
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAyMTZfMjc5%2FMDAxNjEzNDA4Mzk1NDU3.OHnImCptczrI6E-_SujVb4X7qzTCOBVXaWDthImSjwYg.xmoe6voJQUWgZY-8AykirM7b9SQWlNEETUJx0Azp4uUg.JPEG.notkind0116%2FIMG_0813.JPG&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAyMDAzMDJfOTEg%2FMDAxNTgzMTM0Mjk4MjMz.bouX8c2UZFW2rdof4ClXqtJodSkzwhkANxN_BbBOXMQg.qrZwaPy0c03Dm7t4fdY6GEkEHxfix_u1KYSA8PzVgFUg.JPEG%2FexternalFile.jpg&type=ofullfill340_600"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210214_51%2F1613231200117IK8or_JPEG%2F14367045828073757_2006079257.jpg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20150207_36%2Fka1775_1423307804580K1Sol_JPEG%2FNa1423307801644.jpg&type=ofullfill340_600"/>
-		<p>
-			이제 승윤이꺼 자동차,미니특공대도 나와라
-		</p>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMThfMjQy%2FMDAxNjE2MDAxOTgxMTE1.BhR-LvDwZpDBbsKL5wAbj5oT-mXnPrn4p2Hg5LIcCTIg.tdXCBtGWTTQ9ty9q2fUP-Gf3HvvbAUZ0gzH3sp_inMIg.PNG.juok7777%2Fimage.png&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEyMjZfMTcx%2FMDAxNjA4OTg0NTYxNTQy.QyqhnHK7DdYi-1LxgQTaSPnM41psR4x1AOfmIkOS_M8g.KPWA4r5PfbNvkFfnQr-NFQ9clTyIu5po2Mz5RLMDeEcg.JPEG.b319%2FDSC06965.JPG&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAyMDRfMjIy%2FMDAxNjEyNDEyOTkwMjQ3.qieO4Mb6byGE4bIs3IPthrWLHOxpcdWBb7vYZDYOeLEg.YwyKmFqtBlRv5zbWjsNufWv7KYKFcSDqHOT7PTY2SX4g.JPEG.rrouen%2FIMG_6825.jpg&type=a340"/>
-		<p>
-			승윤 소윤꺼 합체로봇 나와라 얍!
-		</p>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAyMTAyMTRfMTQ5%2FMDAxNjEzMjg2Mjk0NDU4.iwzD5oT8ME15NxOHyg5e9vOAukXz5MMS9mYmtLhh8AQg.1jbPTv4yCNf6VeUaHKyX3AaYSl-KEJSYi4BfPqmLSTEg.JPEG%2FexternalFile.jpg&type=ofullfill340_600"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMjRfMjc5%2FMDAxNjExNDg5NTIzMzc2.YpUveP90OhsN0obz-PhfIRQ3DbT9OTPmahlamnmJgPsg.iC4ilnLDm0syyb3-uHAf9ZF_b9rhgPpYF80daMHMPT4g.JPEG.junggoon7%2F20210123%25A3%25DF193703.jpg&type=a340"/>
-		<p>
-			소윤이 누나 자동차 나와라 얍얍!
-		</p>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20100505_9%2Fmockory_12730665577593N14T_jpg%2Falfa_romeo_156_gta_mockory.jpg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150921_157%2Fqromantist_1442823791062KX2QD_JPEG%2F2.JPG&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20110816_265%2Fjd7722_1313467262333EiPk7_jpg%2Fcr-z_%25B5%25DA_jd7722.jpg&type=a340"/>
-		
-		<p>
-			박소윤이의 무서운 공룡이다 얍
-		</p>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshopping.phinf.naver.net%2Fmain_2407349%2F24073496130.20200907211013.jpg&type=a340"/>
-		<p>
-			박승윤이의 무서운 공룡이다 얍
-		</p>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAyMjFfMTQ2%2FMDAxNjEzODY1NTIzOTg4.fPZipXtExeu0gMXAkoknMcvlt-YvCc0gKaMJL65ZOW8g.SJzBZi0V3aOqs35cBIxTW9HyjMFNKa7WygKdBz7iP70g.JPEG.potato0619%2FIMG_5343.jpg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20200409_69%2F1586403653579Bui2e_JPEG%2F23767042101575189_434861764.jpg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20130212_54%2Fstaryoomi_1360666196502jyqrl_JPEG%2F%25C6%25BC%25B6%25F3%25B3%25EB%25BB%25E7%25BF%25EC%25B7%25E7%25BD%25BA.JPG&type=a340"/>
-		
-		<p>
-			박소윤이의 공룡 캐릭터다 얍
-		</p>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20111129_217%2Fjmissy_1322568744793N5azf_JPEG%2F%25C4%25B3%25B8%25AF%25C5%25CD.jpg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5159%2F2015%2F06%2F21%2F15354_23759_87_99_20150621113141.jpg&type=a340"/>
-		
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210131_25%2F1612067827687BiEdH_JPEG%2F594262821116.jpg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshopping.phinf.naver.net%2Fmain_2604192%2F26041921878.20210218174832.jpg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDNfMTk0%2FMDAxNjE0NzI4NjQ4Nzkx.n6Wu9Go6vLl1btD4k8FkKNJIZfxN_8OENBIVHD3HmaQg.a9bFggDTA3y74PgKxuzM4LiRosiiflGiFADwvVFvmcYg.JPEG.cho21pd%2F8.jpg&type=a340"/>
-		<p>
-			박승윤이의 또 공룡
-		</p>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAxOTA3MTJfMiAg%2FMDAxNTYyOTI3NDA2NzM2.rZcVORIS7L8LUg34eBuPAs9AJRTCmnxACXrtB-VWHsog.rGLNbO2ORLI1GaU2nN3v-21UQGR5c1DsIQCzT0UMXTsg.JPEG%2FexternalFile.jpg&type=ofullfill340_600"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODEyMDVfMTI4%2FMDAxNTQzOTkzOTAyMzI0.ITfcsyHi1FZwpyLZqC87kRPdxqaq5CVIixoFUkMN9j4g.Sh8T0m6k0JMFBzj6BFH9t3Ul0e_l1XcBbjqCM63wYqYg.JPEG.neulpumsu%2F1.jpg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210215_36%2F1613397513280vCPbP_JPEG%2F9ho1k8v_2021214215453813801.jpg&type=a340"/>
-		<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210122_27%2F1611284976806TgL4n_JPEG%2F12420872519798523_987568485.jpg&type=a340"/>
+		<div class="container">
+			<div class="accordion accordion-flush" id="accordionFlushExample">
+			  <div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingOne">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+					눌러봐 보렴
+				  </button>
+				</h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+				  <div class="accordion-body"><code>소윤아</code> 안녕</div>
+				</div>
+			  </div>
+			  <div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingTwo">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+					눌러봐 보렴
+				  </button>
+				</h2>
+				<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+				  <div class="accordion-body"><code>승윤아</code> 안녕</div>
+				</div>
+			  </div>
+			</div>
+		</div>	
+		<div class="container">
+			<img id='id1' src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTExMDFfMTUy%2FMDAxNTcyNTczNDIyODQw.4draBbHFb9T3Uf5aVHyLEPnZJ46H-nufB33zAHxtCNcg.HQLUV59Irk480mO4DOpDxts1mFeC6t5h3Rth4_ySE0Ag.JPEG.and-drawing%2FIMG_0617.JPG&type=sc960_832"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMjBfMTAz%2FMDAxNjE2MjE3NzcyMzc2.Rbw920Fw0fM9nfTmmo6EjJToqqkP099OJeeE86oLU0Yg.gf67hLcBeVjXFUpPMaDCIDBsHXqwSdSxQkTlnhmqwyAg.JPEG.dhrql888%2F20210319%25A3%25DF124426.jpg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA3MDhfMjc5%2FMDAxNTk0MjEwOTUwMTEz.QtAEM49FM0CzOXOd38mmfjv4OBBEAw2kZovQxb5Oi0wg.2pDylDy1MscxRWtanVlk4ugEoYC6VOC17E2-Y9Y2vsIg.JPEG.cutecolt%2Fbeauty_1594185449564.jpeg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160615_66%2Fmessier2000_1465919221140uqKAv_JPEG%2Fbbc83621-6752-4cb3-ba1a-045da02334e0.png.jpg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMTVfNDUg%2FMDAxNjE1ODExOTM0Mzk5.27O_q786U_EIOkJY8yQyFeepC4qx58MHXBsI8Dfklawg.jzhSQgXHVdZQe8U-b6cMke-LwaMEcX8e1dqVJQNxyxog.JPEG.tngo1005%2F%25BD%25C5%25B5%25A5%25B7%25BC%25B6%25F31.jpg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA1MDhfNjAg%2FMDAxNTg4OTM5OTc0NzMz.GaBNyqCRGEbHyG-VLgFo8Metm92knnbcw7Xbg3yYBssg.zQnc9R5yePlo1ufRuqahrXaeaSnyOCoFQqsdhbAQKtkg.JPEG.slmpje%2F1588939973341.jpg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMzFfMjky%2FMDAxNjEyMDk2MzIwNDE1.X852kLaUY9I7HTrvQKOIAmfjbwWee-0sQGJFP35DgFQg.9gEDQAo4_zBA2tbIXHgOd0EKOCi2s1SlMK1MvTvDevQg.JPEG.jje2590%2F7D39E4CE-DFCB-4F6E-B013-F0C6AF81ECF6.jpg&type=a340"/>
+			<p>이제 도깨비 나온다  </p>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzA2MDlfMjc5%2FMDAxNDk2OTc2NDg4OTEw.IiG8MJRHW8h7m0m9rm6Cexwe8g15Mlz9gpSM4C1eZuMg.OB1A3fR6EJSMK6fah9tRx0MLBPYWO2mFyEyKZfPWPH4g.JPEG.jymontessori%2Fzxczxczxc.jpg&type=sc960_832"/>
+			<p>이제 자동차다</p>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMjlfMjQg%2FMDAxNjExOTA2ODk2NjY0.aB0egUYuEKeXWcU2sOKSPAwvt6JD0g2HSR_jpi4cTikg.t2NDrKGHYuUeMCRFAePaZhfQbEoKMicsMw8PHIWicRUg.JPEG.ruddnr1978%2F012.jpg&type=l340_165"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210328_194%2F16169047651293xwPK_JPEG%2F39674_mainiamge4.jpg&type=a340"/>
+
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMjVfMTI2%2FMDAxNjE2NjgwMzUyNDM0.JlKwIRnxF2ms6iv1DdQL2Y4O02K4KSzYdgbmKpVKGqIg.ub3GYm6H7WCL6APXDqBQy4hCoMrM8QYfm-KwkH4ZNZ8g.JPEG.dots9288%2Foutput_1049029607.jpg&type=a340"/>
+
+			<p>오늘은 2021년 4월 3일입니다</p>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20140703_245%2Fsiena94_1404363462826iOX7R_PNG%2Fpika.png&type=a340"/>
+
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTA2MjdfMTY0%2FMDAxNTYxNjQzOTIxODUy.ZthEmYZ8Ad8wM31JU4RjL5srlzF7IB2BOIwyGs828Ocg.Vm6Adt3ku6UqNgByTQEwoMAE8Ox0zDWmo9uCP_mqOZIg.PNG.opgh1%2F%25B8%25ED%25C5%25BD%25C1%25A4%25C7%25C7%25C4%25AB%25C3%25F2.png&type=a340"/>
+
+			<p>이건 승윤이꺼야</p>
+			<img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F7c%2Fac%2F9f%2F7cac9ffb98ca75f8f9697ce1b54a6300.jpg&type=a340"/>
+
+			<p>이건 소윤이꺼야</p>
+
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMDlfMTg1%2FMDAxNjEwMTc1NjU5MDgx.89_bj-cN2P7uSQDepmMIviZAL0I4SmzZZmej0gxN8PAg.mOrlC0eLc3KC8dR4UhuGRruaioLgtzdEzS7B2i8glVAg.JPEG.ev91%2F%25C1%25F6%25BF%25EC%25C7%25C7%25C4%25AB%25C3%25F2.jpeg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMThfMTI2%2FMDAxNjE2MDQzNzYzMTM2.iAMUiMdY6BzRehwiKpEcFNXwdS101Hev2VPM2lH58Z8g.aBYbDY8ayjkfvfZLXayuXAySowe53Y0RAbh1MPM4trkg.JPEG.lhl6291%2FIMG_7321.JPG&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20200323_209%2F1584898413001UylWh_JPEG%2F22258247546824706_766269936.jpg&type=a340"/>
+
+			<p>
+				이제 4월5일 식목일 소윤이꺼 시크릿 쥬쥬나와라
+			</p>
+
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAyMTZfMjc5%2FMDAxNjEzNDA4Mzk1NDU3.OHnImCptczrI6E-_SujVb4X7qzTCOBVXaWDthImSjwYg.xmoe6voJQUWgZY-8AykirM7b9SQWlNEETUJx0Azp4uUg.JPEG.notkind0116%2FIMG_0813.JPG&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAyMDAzMDJfOTEg%2FMDAxNTgzMTM0Mjk4MjMz.bouX8c2UZFW2rdof4ClXqtJodSkzwhkANxN_BbBOXMQg.qrZwaPy0c03Dm7t4fdY6GEkEHxfix_u1KYSA8PzVgFUg.JPEG%2FexternalFile.jpg&type=ofullfill340_600"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210214_51%2F1613231200117IK8or_JPEG%2F14367045828073757_2006079257.jpg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20150207_36%2Fka1775_1423307804580K1Sol_JPEG%2FNa1423307801644.jpg&type=ofullfill340_600"/>
+			<p>
+				이제 승윤이꺼 자동차,미니특공대도 나와라
+			</p>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMThfMjQy%2FMDAxNjE2MDAxOTgxMTE1.BhR-LvDwZpDBbsKL5wAbj5oT-mXnPrn4p2Hg5LIcCTIg.tdXCBtGWTTQ9ty9q2fUP-Gf3HvvbAUZ0gzH3sp_inMIg.PNG.juok7777%2Fimage.png&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEyMjZfMTcx%2FMDAxNjA4OTg0NTYxNTQy.QyqhnHK7DdYi-1LxgQTaSPnM41psR4x1AOfmIkOS_M8g.KPWA4r5PfbNvkFfnQr-NFQ9clTyIu5po2Mz5RLMDeEcg.JPEG.b319%2FDSC06965.JPG&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAyMDRfMjIy%2FMDAxNjEyNDEyOTkwMjQ3.qieO4Mb6byGE4bIs3IPthrWLHOxpcdWBb7vYZDYOeLEg.YwyKmFqtBlRv5zbWjsNufWv7KYKFcSDqHOT7PTY2SX4g.JPEG.rrouen%2FIMG_6825.jpg&type=a340"/>
+			<p>
+				승윤 소윤꺼 합체로봇 나와라 얍!
+			</p>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAyMTAyMTRfMTQ5%2FMDAxNjEzMjg2Mjk0NDU4.iwzD5oT8ME15NxOHyg5e9vOAukXz5MMS9mYmtLhh8AQg.1jbPTv4yCNf6VeUaHKyX3AaYSl-KEJSYi4BfPqmLSTEg.JPEG%2FexternalFile.jpg&type=ofullfill340_600"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMjRfMjc5%2FMDAxNjExNDg5NTIzMzc2.YpUveP90OhsN0obz-PhfIRQ3DbT9OTPmahlamnmJgPsg.iC4ilnLDm0syyb3-uHAf9ZF_b9rhgPpYF80daMHMPT4g.JPEG.junggoon7%2F20210123%25A3%25DF193703.jpg&type=a340"/>
+			<p>
+				소윤이 누나 자동차 나와라 얍얍!
+			</p>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20100505_9%2Fmockory_12730665577593N14T_jpg%2Falfa_romeo_156_gta_mockory.jpg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150921_157%2Fqromantist_1442823791062KX2QD_JPEG%2F2.JPG&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20110816_265%2Fjd7722_1313467262333EiPk7_jpg%2Fcr-z_%25B5%25DA_jd7722.jpg&type=a340"/>
+
+			<p>
+				박소윤이의 무서운 공룡이다 얍
+			</p>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshopping.phinf.naver.net%2Fmain_2407349%2F24073496130.20200907211013.jpg&type=a340"/>
+			<p>
+				박승윤이의 무서운 공룡이다 얍
+			</p>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAyMjFfMTQ2%2FMDAxNjEzODY1NTIzOTg4.fPZipXtExeu0gMXAkoknMcvlt-YvCc0gKaMJL65ZOW8g.SJzBZi0V3aOqs35cBIxTW9HyjMFNKa7WygKdBz7iP70g.JPEG.potato0619%2FIMG_5343.jpg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20200409_69%2F1586403653579Bui2e_JPEG%2F23767042101575189_434861764.jpg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20130212_54%2Fstaryoomi_1360666196502jyqrl_JPEG%2F%25C6%25BC%25B6%25F3%25B3%25EB%25BB%25E7%25BF%25EC%25B7%25E7%25BD%25BA.JPG&type=a340"/>
+
+			<p>
+				박소윤이의 공룡 캐릭터다 얍
+			</p>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20111129_217%2Fjmissy_1322568744793N5azf_JPEG%2F%25C4%25B3%25B8%25AF%25C5%25CD.jpg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5159%2F2015%2F06%2F21%2F15354_23759_87_99_20150621113141.jpg&type=a340"/>
+
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210131_25%2F1612067827687BiEdH_JPEG%2F594262821116.jpg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshopping.phinf.naver.net%2Fmain_2604192%2F26041921878.20210218174832.jpg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDNfMTk0%2FMDAxNjE0NzI4NjQ4Nzkx.n6Wu9Go6vLl1btD4k8FkKNJIZfxN_8OENBIVHD3HmaQg.a9bFggDTA3y74PgKxuzM4LiRosiiflGiFADwvVFvmcYg.JPEG.cho21pd%2F8.jpg&type=a340"/>
+			<p>
+				박승윤이의 또 공룡
+			</p>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAxOTA3MTJfMiAg%2FMDAxNTYyOTI3NDA2NzM2.rZcVORIS7L8LUg34eBuPAs9AJRTCmnxACXrtB-VWHsog.rGLNbO2ORLI1GaU2nN3v-21UQGR5c1DsIQCzT0UMXTsg.JPEG%2FexternalFile.jpg&type=ofullfill340_600"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODEyMDVfMTI4%2FMDAxNTQzOTkzOTAyMzI0.ITfcsyHi1FZwpyLZqC87kRPdxqaq5CVIixoFUkMN9j4g.Sh8T0m6k0JMFBzj6BFH9t3Ul0e_l1XcBbjqCM63wYqYg.JPEG.neulpumsu%2F1.jpg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210215_36%2F1613397513280vCPbP_JPEG%2F9ho1k8v_2021214215453813801.jpg&type=a340"/>
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210122_27%2F1611284976806TgL4n_JPEG%2F12420872519798523_987568485.jpg&type=a340"/>
+		</div>
 	</body>
 	<script  src="js/jquery_min.js"></script>
 	<script>
