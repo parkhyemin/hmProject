@@ -11,64 +11,107 @@
 	<body>
 		
 		<div class="container">
-			<div class="alert alert-success" role="alert">
-				우리 홈페이지에 온걸 환영합니다
+			
+			<!--환영 문구-->
+			<div class="row">
+				<div class="alert alert-success col-md-6 offset-md-3" role="alert">
+					우리 홈페이지에 온걸 환영합니다
+				</div>
 			</div>
 
-			<div class="card" style="width: 18rem;">
-			  <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMTlfOTUg%2FMDAxNjE2MTA5MDYzNjky.50uetrdZ3V4aX0Lw7TsTShBr60jpfE5oqmRDe-I2ELsg.uOmsW4-e2EorHUGbUtPqoAqacdIPAuo25RJ5C0y5NnUg.JPEG.harimart%2F20210318%25A3%25DF161325.jpg&type=sc960_832" class="card-img-top">
-			  <div class="card-body">
-				<h5 class="card-title">소윤이의 꽃</h5>
-				<p class="card-text">소윤이가 예쁘게 꽃을 만들었답니다. 지금은 우리집에 TV 위에 있어요.</p>
-			  </div>
+			<!--소윤 사진 카드-->
+			<div class="row">
+				<div class="card col-md-6 offset-md-3" style="width: 18rem;">
+				  <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMTlfOTUg%2FMDAxNjE2MTA5MDYzNjky.50uetrdZ3V4aX0Lw7TsTShBr60jpfE5oqmRDe-I2ELsg.uOmsW4-e2EorHUGbUtPqoAqacdIPAuo25RJ5C0y5NnUg.JPEG.harimart%2F20210318%25A3%25DF161325.jpg&type=sc960_832" class="card-img-top">
+				  <div class="card-body">
+					<h5 class="card-title">소윤이의 꽃</h5>
+					<p class="card-text">소윤이가 예쁘게 꽃을 만들었답니다. 지금은 우리집에 TV 위에 있어요.</p>
+				  </div>
+				</div>	
 			</div>
 			
-			<div class="btn-group" role="group" aria-label="Basic example">
-			  <button class="btn btn-primary" onclick='showAllImage()'> 모두보여줘 </button>
-				<button class="btn btn-success" onclick='hideAllImage()'> 모두숨겨줘 </button>
+			<!--버튼 그룹-->
+			<div class="row">
+				<div class="btn-group col-md-6 offset-md-3" role="group" aria-label="Basic example">
+				  <button class="btn btn-primary" onclick='showAllImage()'> 모두보여줘 </button>
+					<button class="btn btn-success" onclick='hideAllImage()'> 모두숨겨줘 </button>
+				</div>
 			</div>
 			
-			<div class="accordion accordion-flush" id="accordionFlushExample">
-			  <div class="accordion-item">
-				<h2 class="accordion-header" id="flush-headingOne">
-				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-					소윤이 눌러봐
-				  </button>
-				</h2>
-				<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-				  <div class="accordion-body"><code>소윤아</code> 안녕</div>
+			<!--아코디언-->
+			<div class="row">
+				<div class="accordion accordion-flush  col-md-6 offset-md-3" id="accordionFlushExample">
+				  <div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingOne">
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+						소윤이 눌러봐
+					  </button>
+					</h2>
+					<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+					  <div class="accordion-body"><code>소윤아</code> 안녕</div>
+					</div>
+				  </div>
+				  <div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingTwo">
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+						승윤아 눌러봐
+					  </button>
+					</h2>
+					<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+					  <div class="accordion-body"><code>승윤아</code> 안녕</div>
+					</div>
+				  </div>
 				</div>
-			  </div>
-			  <div class="accordion-item">
-				<h2 class="accordion-header" id="flush-headingTwo">
-				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-					승윤아 눌러봐
-				  </button>
-				</h2>
-				<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-				  <div class="accordion-body"><code>승윤아</code> 안녕</div>
-				</div>
-			  </div>
 			</div>
 		</div>	
+		
+		<!--이미지 추가 시작-->
 		<div class="container">
 			<div class="row">
-				<img id='id1' class="col-4" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTExMDFfMTUy%2FMDAxNTcyNTczNDIyODQw.4draBbHFb9T3Uf5aVHyLEPnZJ46H-nufB33zAHxtCNcg.HQLUV59Irk480mO4DOpDxts1mFeC6t5h3Rth4_ySE0Ag.JPEG.and-drawing%2FIMG_0617.JPG&type=sc960_832"/>	
+				<img id='id1' class="col-md-6 offset-md-3" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTExMDFfMTUy%2FMDAxNTcyNTczNDIyODQw.4draBbHFb9T3Uf5aVHyLEPnZJ46H-nufB33zAHxtCNcg.HQLUV59Irk480mO4DOpDxts1mFeC6t5h3Rth4_ySE0Ag.JPEG.and-drawing%2FIMG_0617.JPG&type=sc960_832"/>	
 			</div>
 			
-			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMjBfMTAz%2FMDAxNjE2MjE3NzcyMzc2.Rbw920Fw0fM9nfTmmo6EjJToqqkP099OJeeE86oLU0Yg.gf67hLcBeVjXFUpPMaDCIDBsHXqwSdSxQkTlnhmqwyAg.JPEG.dhrql888%2F20210319%25A3%25DF124426.jpg&type=a340"/>
-			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA3MDhfMjc5%2FMDAxNTk0MjEwOTUwMTEz.QtAEM49FM0CzOXOd38mmfjv4OBBEAw2kZovQxb5Oi0wg.2pDylDy1MscxRWtanVlk4ugEoYC6VOC17E2-Y9Y2vsIg.JPEG.cutecolt%2Fbeauty_1594185449564.jpeg&type=a340"/>
-			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160615_66%2Fmessier2000_1465919221140uqKAv_JPEG%2Fbbc83621-6752-4cb3-ba1a-045da02334e0.png.jpg&type=a340"/>
-			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMTVfNDUg%2FMDAxNjE1ODExOTM0Mzk5.27O_q786U_EIOkJY8yQyFeepC4qx58MHXBsI8Dfklawg.jzhSQgXHVdZQe8U-b6cMke-LwaMEcX8e1dqVJQNxyxog.JPEG.tngo1005%2F%25BD%25C5%25B5%25A5%25B7%25BC%25B6%25F31.jpg&type=a340"/>
-			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA1MDhfNjAg%2FMDAxNTg4OTM5OTc0NzMz.GaBNyqCRGEbHyG-VLgFo8Metm92knnbcw7Xbg3yYBssg.zQnc9R5yePlo1ufRuqahrXaeaSnyOCoFQqsdhbAQKtkg.JPEG.slmpje%2F1588939973341.jpg&type=a340"/>
-			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMzFfMjky%2FMDAxNjEyMDk2MzIwNDE1.X852kLaUY9I7HTrvQKOIAmfjbwWee-0sQGJFP35DgFQg.9gEDQAo4_zBA2tbIXHgOd0EKOCi2s1SlMK1MvTvDevQg.JPEG.jje2590%2F7D39E4CE-DFCB-4F6E-B013-F0C6AF81ECF6.jpg&type=a340"/>
+			<div class="row">
+				<img  class="col-md-6 offset-md-3" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMjBfMTAz%2FMDAxNjE2MjE3NzcyMzc2.Rbw920Fw0fM9nfTmmo6EjJToqqkP099OJeeE86oLU0Yg.gf67hLcBeVjXFUpPMaDCIDBsHXqwSdSxQkTlnhmqwyAg.JPEG.dhrql888%2F20210319%25A3%25DF124426.jpg&type=a340"/>
+			</div>
 			
-			<div class="alert alert-warning" role="alert"> 이제 도깨비 나온다 </div>
+			<div class="row">
+				<img  class="col-md-6 offset-md-3" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA3MDhfMjc5%2FMDAxNTk0MjEwOTUwMTEz.QtAEM49FM0CzOXOd38mmfjv4OBBEAw2kZovQxb5Oi0wg.2pDylDy1MscxRWtanVlk4ugEoYC6VOC17E2-Y9Y2vsIg.JPEG.cutecolt%2Fbeauty_1594185449564.jpeg&type=a340"/>
+			</div>
 			
-			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzA2MDlfMjc5%2FMDAxNDk2OTc2NDg4OTEw.IiG8MJRHW8h7m0m9rm6Cexwe8g15Mlz9gpSM4C1eZuMg.OB1A3fR6EJSMK6fah9tRx0MLBPYWO2mFyEyKZfPWPH4g.JPEG.jymontessori%2Fzxczxczxc.jpg&type=sc960_832"/>
-			<div class="alert alert-warning" role="alert"> 이제 자동차다 </div>
-			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMjlfMjQg%2FMDAxNjExOTA2ODk2NjY0.aB0egUYuEKeXWcU2sOKSPAwvt6JD0g2HSR_jpi4cTikg.t2NDrKGHYuUeMCRFAePaZhfQbEoKMicsMw8PHIWicRUg.JPEG.ruddnr1978%2F012.jpg&type=l340_165"/>
-			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210328_194%2F16169047651293xwPK_JPEG%2F39674_mainiamge4.jpg&type=a340"/>
+			<div class="row">
+				<img  class="col-md-6 offset-md-3" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160615_66%2Fmessier2000_1465919221140uqKAv_JPEG%2Fbbc83621-6752-4cb3-ba1a-045da02334e0.png.jpg&type=a340"/>
+			</div>
+			
+			<div class="row">
+				<img  class="col-md-6 offset-md-3" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMTVfNDUg%2FMDAxNjE1ODExOTM0Mzk5.27O_q786U_EIOkJY8yQyFeepC4qx58MHXBsI8Dfklawg.jzhSQgXHVdZQe8U-b6cMke-LwaMEcX8e1dqVJQNxyxog.JPEG.tngo1005%2F%25BD%25C5%25B5%25A5%25B7%25BC%25B6%25F31.jpg&type=a340"/>
+			</div>
+			<div class="row">
+				<img  class="col-md-6 offset-md-3" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA1MDhfNjAg%2FMDAxNTg4OTM5OTc0NzMz.GaBNyqCRGEbHyG-VLgFo8Metm92knnbcw7Xbg3yYBssg.zQnc9R5yePlo1ufRuqahrXaeaSnyOCoFQqsdhbAQKtkg.JPEG.slmpje%2F1588939973341.jpg&type=a340"/>
+			</div>
+			
+			<div class="row">
+				<img  class="col-md-6 offset-md-3" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMzFfMjky%2FMDAxNjEyMDk2MzIwNDE1.X852kLaUY9I7HTrvQKOIAmfjbwWee-0sQGJFP35DgFQg.9gEDQAo4_zBA2tbIXHgOd0EKOCi2s1SlMK1MvTvDevQg.JPEG.jje2590%2F7D39E4CE-DFCB-4F6E-B013-F0C6AF81ECF6.jpg&type=a340"/>
+			</div>
+			
+			<div class="row alert alert-warning" role="alert"> 이제 도깨비 나온다 </div>
+			
+			<div class="row">
+				<img class="col-md-6 offset-md-3" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzA2MDlfMjc5%2FMDAxNDk2OTc2NDg4OTEw.IiG8MJRHW8h7m0m9rm6Cexwe8g15Mlz9gpSM4C1eZuMg.OB1A3fR6EJSMK6fah9tRx0MLBPYWO2mFyEyKZfPWPH4g.JPEG.jymontessori%2Fzxczxczxc.jpg&type=sc960_832"/>
+			</div>
+			
+			<div class="row alert alert-warning" role="alert"> 이제 자동차다 </div>
+			
+			<div class="row">
+				<img class="col-md-6 offset-md-3" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMjlfMjQg%2FMDAxNjExOTA2ODk2NjY0.aB0egUYuEKeXWcU2sOKSPAwvt6JD0g2HSR_jpi4cTikg.t2NDrKGHYuUeMCRFAePaZhfQbEoKMicsMw8PHIWicRUg.JPEG.ruddnr1978%2F012.jpg&type=l340_165"/>
+			</div>
+			
+			<div class="row">
+				<img class="col-md-6 offset-md-3" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210328_194%2F16169047651293xwPK_JPEG%2F39674_mainiamge4.jpg&type=a340"/>
+			</div>
+			
+			
+			<!-- 작업해야함~~~~~~~~~~~~~~~~~~~~~ -->
 
 			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMjVfMTI2%2FMDAxNjE2NjgwMzUyNDM0.JlKwIRnxF2ms6iv1DdQL2Y4O02K4KSzYdgbmKpVKGqIg.ub3GYm6H7WCL6APXDqBQy4hCoMrM8QYfm-KwkH4ZNZ8g.JPEG.dots9288%2Foutput_1049029607.jpg&type=a340"/>
 
@@ -150,6 +193,7 @@
 			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2Fdata11%2F2005%2F10%2F28%2F41%2Fkkbi-keidi2.jpg&type=a340"/>
 			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20141007_125%2Fgoldline0923_14126098707885L3fO_JPEG%2F%25C1%25A6%25B8%25F1_%25BE%25F8%25C0%25BD-1.jpg&type=a340"/>
 		</div>
+		<!--이미지 추가 끝-->
 	</body>
 	<script  src="js/jquery_min.js"></script>
 	<script>
